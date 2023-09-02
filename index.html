@@ -1,0 +1,220 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sxorpyblog</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/
+f90068558c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          class="header-icon"
+          src="https://cdn-icons-png.flaticon.com/512/3242/3242244.png"
+          alt=""
+        />
+        <h3 class="title"><a href="index.html">Sxorpyblog</a></h3>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Me</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="jumbotron">
+        <div class="jumbotron">
+          <h1 
+          class="jumbotron-title"
+          onmouseover="changeTitle(this)"
+          onmouseout="changeTitleBack(this)"
+        >
+          Nathan, just an ordinary person
+        </h1>
+
+          <div class="header-flex">
+            <div>
+              <h2 class="jumbotron-text">
+                Wanna know about me?
+                <br />
+                Let's Start
+                <span style="color: #f4a261">Explore My Blog</span>
+              </h2>
+              <div class="mini-text-flex">
+                <p class="mini-text">Explore here!</p>
+                <button id="icon-up" onclick="changeText()">
+                  <i class="far fa-hand-point-up"></i>
+                </button>
+                <button id="icon-down" class="icon-down">
+                  <i class="far fa-hand-point-down" onclick="changeText()"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                onmouseover="changeImage(this)"
+                onmouseout="changeImageBack(this)"
+                class="jumbotron-img"
+                src="https://cdn0.iconfinder.com/data/icons/occupation-002/64/programmer-programming-occupation-avatar-512.png"
+                alt="gambar"
+                width="auto"
+                height="300"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <div class="main-content">
+        <aside>
+          <div class="profile">
+            <h3 class="aside-title">my photo</h3>
+            <img
+              class="profile-picture"
+              src="https://cdn2.iconfinder.com/data/icons/professional-avatar-9/64/38-512.png"
+              alt="Nathan"
+              width="150px"
+              height="auto"
+            />
+            <div class="toggle">
+              <button class="btn" id="green">
+                <i class="fa fa-thumbs-up fa-lg"></i>
+              </button>
+              <button class="btn" id="red">
+                <i class="fa fa-thumbs-down fa-lg"></i>
+              </button>
+            </div>
+          </div>
+          <div class="search-tags-container">
+            <div class="input-tag">
+              <h3 class="aside-title">Search Here</h3>
+              <input id="myInput" type="text" placeholder="Search..." />
+              <span class="addBtn" onclick="newElement()"> Search</span>
+            </div>
+            <ul id="myUL" class="search-tags-list">
+              <li class="search-tags-item">HTML</li>
+              <li class="search-tags-item">Code</li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="content">
+          <article id=" my-project ">
+            <h3 class="article-title">My Project</h3>
+            <div class="project-container">
+              <div class="project">
+                <img src="" alt="project-2" width="300p" height="210px" />
+                <h4 class="project-title">Cinematixx</h4>
+                <p class="project-description">
+                  
+                </p>
+              </div>
+              <div class="project">
+                <img
+                  src="assets/memory-game.png"
+                  alt="project-2"
+                  width="300px"
+                  height="210px"
+                />
+                <h4 class="project-title">Memory Game</h4>
+                <p class="project-description">
+                  Game Memory Game menggunakan platform Phaser
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article id="video">
+            <div class="item-video">
+              <h3 class="article-title">My Favorite Activity</h3>
+              <iframe class="video-content" 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/N7ZmPYaXoic" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen></iframe>
+
+              <h3 class="article-title">My Favorite Game</h3>
+              <iframe class="video-content"
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/o3V-GvvzjE4" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen></iframe>
+            </div>
+          </article>
+
+          <article id="audio">
+            <div class="audio">
+              <h3 class="article-title">My Playlist</h3>
+              <div class="audio">
+                <iframe 
+                style="border-radius:12px" 
+                src="https://open.spotify.com/embed/playlist/3RvC9i389lwSLKjoqp7K9A?utm_source=generator" 
+                width="100%" 
+                height="352" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy"></iframe>
+                <div class="audio-text">
+                  <!-- <h3>Nathan Blog</h3>
+                                <p>A blog of an ordinary person<br>
+                                Make sure you don't get bored</p> -->
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="maps">
+            <div class="maps">
+              <h3 class="article-title">Location</h3>
+              <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.1364531663016!2d120.57500227396712!3d15.205697161978335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396ed6414907d95%3A0xdaa04b8f9e182169!2snigger!5e0!3m2!1sen!2sid!4v1691145067440!5m2!1sen!2sid" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="maps-text">
+                  <!-- <h3>Nathan Blog</h3>
+                                <p>A blog of an ordinary person<br>
+                                Make sure you don't get bored</p> -->
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+   
+    <footer>
+      <div class="main-footer">
+        <h3 class="info-top">Nathan the Ordinary</h3>
+        <div class="social-media">
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <p class="info-center">
+          Copyright &copy; 2023. Nathan. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
